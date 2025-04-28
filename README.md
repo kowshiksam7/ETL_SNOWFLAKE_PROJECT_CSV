@@ -41,14 +41,15 @@ Ensure you have Python 3.x installed, then create a virtual environment and inst
 
 python -m venv venv
 
-Activate the virtual environment
+#Activate the virtual environment
 
  On Windows
 venv\Scripts\activate
+
  On macOS/Linux
 source venv/bin/activate
 
- Install the required packages:
+ #Install the required packages:
  
 pip install -r requirements.txt
 
