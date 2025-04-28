@@ -1,7 +1,7 @@
 # ETL Pipeline for Snowflake Data Integration
-Project Overview
+#### Project Overview
 This project implements an end-to-end ETL pipeline for extracting, transforming, and loading (ETL) sales data from a CSV file into a Snowflake database. The pipeline is built using Python and pandas for data manipulation and includes comprehensive data cleaning, transformation, and post-load validation steps to ensure consistency and data integrity.
-Key Features:
+#### Key Features:
 . Data Extraction: Pulls sales data from a CSV file.
 
 . Data Transformation: Cleans and prepares the data by handling missing values, converting date formats, and adding calculated columns (e.g., Delivery Time in Days).
@@ -10,14 +10,14 @@ Key Features:
 
 . Post-Load Validation: Verifies data integrity by checking for NULL values and duplicate rows after loading into Snowflake.
 
-Credentials & Security:
+#### Credentials & Security:
 
 . .env File: Sensitive credentials and configurations (e.g., Snowflake login details) are securely managed using the .env file.
 
 . The .env.example.txt file is provided as a template for setting up environment variables without exposing sensitive information.
 
-Project Structure
-The repository contains the following key files:
+#### Project Structure
+###### The repository contains the following key files:
 
  ETL_Pipeline.ipynb: The main Jupyter notebook containing the complete ETL pipeline code.
 
@@ -31,13 +31,13 @@ The repository contains the following key files:
 
  .gitattributes: Optional configuration for Git handling.
 
-Installation
+#### Installation
 1. Clone the repository:
 git clone https://github.com/kowshiksam7/ETL_Snowflake_Project_CSV.git
 2. Install the required dependencies:
 Ensure you have Python 3.x installed, then create a virtual environment and install dependencies:
 
-Create a Virtual Environment:
+##### Create a Virtual Environment:
 
 python -m venv venv
 
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 Copy .env.example.txt to .env and update the file with your Snowflake credentials.
 cp .env.example.txt .env
 
-Ensure that the following environment variables are correctly set in your .env file:
+##### Ensure that the following environment variables are correctly set in your .env file:
 
 SNOWFLAKE_ACCOUNT: Your Snowflake account URL.
 
@@ -74,7 +74,7 @@ SNOWFLAKE_SCHEMA: The schema for loading data.
 4. Run the ETL pipeline:
 Once your environment is set up and the credentials are in place, run the ETL_Pipeline.ipynb Jupyter notebook to execute the entire ETL process.
 
-Project Workflow
+#### Project Workflow
 1. Data Extraction:
 The pipeline begins by loading sales data from a CSV file located at the path specified in the .env file.
 
@@ -101,7 +101,7 @@ Compares the SALES sum between the source CSV file and the Snowflake table.
 
 Checks for duplicate ROW_ID values in the Snowflake database.
 
-Notes:
+#### Notes:
 
 Data Integrity: The pipeline ensures that data is consistently transformed, loaded, and validated to maintain high data quality.
 
