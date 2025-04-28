@@ -19,17 +19,19 @@ This project implements an end-to-end ETL pipeline for extracting, transforming,
 #### Project Structure
 ###### The repository contains the following key files:
 
- - ETL_Pipeline.ipynb: The main Jupyter notebook containing the complete ETL pipeline code.
+ - **ETL_Pipeline.ipynb:** The main Jupyter notebook containing the complete ETL pipeline code.
 
- - README.md: This file, providing an overview of the project.
+ - **Data/**: Folder containing the source sales CSV file used for the ETL process.
 
- - requirements.txt: A list of Python dependencies required to run the project.
+ - **README.md:** This file, providing an overview of the project.
 
- - .gitignore: Ensures sensitive files like .env are not uploaded to GitHub.
+ - **requirements.txt:** A list of Python dependencies required to run the project.
 
- - .env.example.txt: A template for the .env file, ensuring secure handling of configuration details.
+ - **.gitignore:** Ensures sensitive files like .env are not uploaded to GitHub.
 
- - .gitattributes: Optional configuration for Git handling.
+ - **.env.example.txt:** A template for the .env file, ensuring secure handling of configuration details.
+
+ - **.gitattributes:** Optional configuration for Git handling.
 
 #### Installation
 1. Clone the repository:
